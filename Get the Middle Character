@@ -1,0 +1,15 @@
+// Getting the middle character of a string
+#include <string>
+std::string get_middle(std::string input) 
+{
+  
+  int len = input.length();
+  
+  if(len % 2 == 0){
+    return input.substr(len/2 - 1,2);
+  }
+  
+  return input.substr(len/2,1);
+  
+  
+}
